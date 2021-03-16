@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Event Listing</h1>
+    <h3>Test for new branch</h3>
     <EventCard v-for="event in events" :key="event.id" :event="event" />
     <template v-if="page != 1">
       <router-link  :to="{ name: 'event-list', query: { page: page - 1 } }" rel="prev">
